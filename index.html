@@ -3,143 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODE CRAFTERS</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Code Crafters | Soluciones Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">
-                <i class="fas fa-code"></i>
-                <span>CODE CRAFTERS</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#about">Nosotros</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Partículas de fondo -->
+    <div id="particles-js"></div>
 
-    <!-- Hero Section -->
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="code-bracket">&lt;/&gt;</span>
+                <span class="logo-text">CODE CRAFTERS</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="fade-in">CODE CRAFTERS</h1>
-            <h2 class="fade-in-delay">Generamos soluciones eficientes para tu negocio.</h2>
-
-            <p class="fade-in-delay">Nos especializamos en la creación de páginas web innovadoras y funcionales, combinando tecnología de vanguardia con un enfoque personalizado para impulsar el éxito de tu negocio.</p>
+            <h1 class="glitch" data-text="CODE CRAFTERS">CODE CRAFTERS</h1>
+            <h2>Generamos soluciones eficientes para tu negocio.</h2>
+            <p>Nos especializamos en la creación de páginas web innovadoras y funcionales, combinando tecnología de vanguardia con un enfoque personalizado para impulsar el éxito de tu negocio.</p>
+            <a href="#contacto" class="btn-primary">Contáctanos</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+        <div class="section-header">
             <h2>Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Landing Page</h3>
-                    <p>Diseñamos páginas de alto impacto optimizadas para convertir visitas en clientes, con un diseño moderno y efectivo</p>
+            <div class="underline"></div>
+        </div>
+        <div class="servicios-container">
+            <div class="servicio-card">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Desarrollo Web</h3>
-                    <p>Creamos sitios web modernos y responsivos utilizando las últimas tecnologías y mejores prácticas de desarrollo.</p>
+                <h3>Landing Page</h3>
+                <p>Diseñamos páginas de alto impacto optimizadas para convertir visitas en clientes, con un diseño moderno y efectivo.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Impulso de Marca</h3>
-                    <p>Impulsamos tu marca con identidad visual, estrategias SEO y publicidad digital para maximizar tu alcance.</p>
+                <h3>Desarrollo Web</h3>
+                <p>Creamos sitios web modernos y responsivos utilizando las últimas tecnologías y mejores prácticas de desarrollo.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
                 </div>
+                <h3>Impulso de Marca</h3>
+                <p>Impulsamos tu marca con identidad visual, estrategias SEO y publicidad digital para maximizar tu alcance.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
+    <!-- Sección Proyectos Mejorada -->
+    <section id="proyectos" class="proyectos">
+        <div class="section-header">
             <h2>Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-commerce Platform">
-                    <div class="project-info">
-                        <h3>Pequeños emprendedores</h3>
-                        <p>En CODE CRAFTERS, entendemos que cada emprendimiento es único, y por eso diseñamos soluciones web personalizadas que reflejan la esencia de tu marca. Desde el desarrollo de tu página web hasta estrategias de marketing digital y optimización SEO.</p>
+            <div class="underline"></div>
+        </div>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Proyecto de diseño web minimalista">
+                    <div class="proyecto-overlay">
+                        <div class="proyecto-tags">
+                            <span>UX/UI</span>
+                            <span>React</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Banking App">
-                    <div class="project-info">
-                        <h3>Portafolios</h3>
-                        <p>Un portafolio digital es la mejor manera de mostrar tu trabajo de manera profesional y atractiva. En CODE CRAFTERS, diseñamos portafolios web personalizados que permiten a artistas, creativos, y profesionales destacar su talento y experiencia.</p>
+                <div class="proyecto-info">
+                    <h3>Rediseño Plataforma Educativa</h3>
+                    <p>Transformamos la experiencia de usuario de una plataforma educativa con un diseño intuitivo y moderno.</p>
+                    <a href="#" class="btn-secondary">Ver detalles</a>
+                </div>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Dashboard analítico">
+                    <div class="proyecto-overlay">
+                        <div class="proyecto-tags">
+                            <span>Dashboard</span>
+                            <span>Analytics</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="IoT Dashboard">
-                    <div class="project-info">
-                        <h3>Negocios</h3>
-                        <p>En CODE CRAFTERS, diseñamos páginas web a medida que reflejan la identidad de tu marca y hacen que tu negocio se destaque. Ya sea para un restaurante, tienda online o cualquier tipo de negocio.</p>
+                <div class="proyecto-info">
+                    <h3>Dashboard Analítico</h3>
+                    <p>Desarrollamos un sistema de visualización de datos en tiempo real para optimizar la toma de decisiones empresariales.</p>
+                    <a href="#" class="btn-secondary">Ver detalles</a>
+                </div>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Tecnología avanzada">
+                    <div class="proyecto-overlay">
+                        <div class="proyecto-tags">
+                            <span>IoT</span>
+                            <span>API</span>
+                        </div>
                     </div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Sistema IoT Industrial</h3>
+                    <p>Implementamos una solución de Internet de las Cosas para monitoreo y control de procesos industriales.</p>
+                    <a href="#" class="btn-secondary">Ver detalles</a>
                 </div>
             </div>
         </div>
+        <div class="proyectos-cta">
+            <a href="#" class="btn-primary">Ver todos los proyectos</a>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Sobre Nosotros</h2>
-                    <p>En CODE CRAFTERS, somos un equipo apasionado de desarrolladores, diseñadores y estrategas digitales comprometidos con la excelencia técnica y la innovación.</p>
+    <!-- Sección Sobre Nosotros Mejorada -->
+    <section id="nosotros" class="nosotros">
+        <div class="section-header">
+            <h2>Sobre Nosotros</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="nosotros-container">
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <p class="destacado">En CODE CRAFTERS, somos un equipo apasionado de desarrolladores, diseñadores y estrategas digitales comprometidos con la excelencia técnica y la innovación.</p>
                     <p>Desde 2024, hemos estado ayudando a empresas de todos los tamaños a transformar sus ideas en soluciones digitales robustas y escalables.</p>
                     <p>Nuestro enfoque combina tecnología de vanguardia con diseño centrado en el usuario para crear experiencias digitales excepcionales.</p>
+                    <div class="valores">
+                        <div class="valor">
+                            <div class="valor-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <h4>Excelencia</h4>
+                            <p>Nos esforzamos por superar expectativas en cada proyecto.</p>
+                        </div>
+                        <div class="valor">
+                            <div class="valor-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h4>Seguridad</h4>
+                            <p>Implementamos las mejores prácticas de seguridad en todos nuestros desarrollos.</p>
+                        </div>
+                        <div class="valor">
+                            <div class="valor-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                            <h4>Innovación</h4>
+                            <p>Exploramos constantemente nuevas tecnologías para ofrecer soluciones de vanguardia.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stats-grid">
+                <div class="stats-container">
                     <div class="stat-card">
-                        <h3>10+</h3>
-                        <p>Proyectos Completados</p>
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">Proyectos Completados</div>
                     </div>
                     <div class="stat-card">
-                        <h3>20+</h3>
-                        <p>Clientes Satisfechos</p>
+                        <div class="stat-number" data-count="20">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
                     </div>
                     <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Expertos en el Equipo</p>
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-plus">+</div>
+                        <div class="stat-label">Expertos en el Equipo</div>
                     </div>
                     <div class="stat-card">
-                        <h3>24/7</h3>
-                        <p>Soporte Técnico</p>
+                        <div class="stat-label-special">24/7</div>
+                        <div class="stat-label">Soporte Técnico</div>
                     </div>
                 </div>
             </div>
+            <div class="equipo-section">
+                <h3>Nuestro Equipo</h3>
+                <div class="equipo-grid">
+                    <div class="miembro-card">
+                        <div class="miembro-img">
+                            <div class="miembro-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Alejandro Méndez</h4>
+                        <p>Director de Tecnología</p>
+                    </div>
+                    <div class="miembro-card">
+                        <div class="miembro-img">
+                            <div class="miembro-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Sofía Rodríguez</h4>
+                        <p>Diseñadora UX/UI</p>
+                    </div>
+                    <div class="miembro-card">
+                        <div class="miembro-img">
+                            <div class="miembro-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h4>Carlos Vega</h4>
+                        <p>Desarrollador Full Stack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="section-header">
+            <h2>Contáctanos</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h3>¿Listo para transformar tu idea en realidad?</h3>
+                <p>Cuéntanos sobre tu proyecto y te ayudaremos a llevarlo al siguiente nivel.</p>
+                <div class="contacto-metodos">
+                    <div class="contacto-metodo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>info@codecrafters.com</span>
+                    </div>
+                    <div class="contacto-metodo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>+34 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contacto-form">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select id="servicio" name="servicio">
+                        <option value="" disabled selected>Selecciona un servicio</option>
+                        <option value="landing">Landing Page</option>
+                        <option value="web">Desarrollo Web</option>
+                        <option value="marca">Impulso de Marca</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>CODE CRAFTERS</h3>
-                    <p>Transformando ideas en realidad digital</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">
+                    <span class="code-bracket">&lt;/&gt;</span>
+                    <span class="logo-text">CODE CRAFTERS</span>
                 </div>
-                <div class="social-links">
-                    <a href="https://wa.me/+541151465542" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/codecrafters.com.ar" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/in/santiago-astargo-vales" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                </div>
+                <p>Transformando ideas en realidad digital</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> CODE CRAFTERS. Todos los derechos reservados.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CODE CRAFTERS. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
